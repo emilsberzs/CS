@@ -1,0 +1,451 @@
+2.1_tmp_partition         [ KO ] tmp.mount service is inactive!
+2.1_tmp_partition         [ KO ] Check Failed
+2.2_tmp_nodev             [ KO ] /lib/systemd/system/tmp.mount is not exist! Please apply 2.1 first!
+2.2_tmp_nodev             [ KO ] Check Failed
+2.3_tmp_nosuid            [ KO ] /lib/systemd/system/tmp.mount is not exist! Please apply 2.1 first!
+2.3_tmp_nosuid            [ KO ] Check Failed
+2.4_tmp_noexec            [ KO ] /lib/systemd/system/tmp.mount is not exist! Please apply 2.1 first!
+2.4_tmp_noexec            [ KO ] Check Failed
+2.5_var_partition         [ KO ] /var is not a partition
+2.5_var_partition         [ KO ] Check Failed
+2.6.1_var_tmp_partition   [ KO ] /var/tmp is not a partition
+2.6.1_var_tmp_partition   [ KO ] Check Failed
+2.6.2_var_tmp_nodev       [ KO ] /var/tmp is not a partition
+2.6.2_var_tmp_nodev       [ KO ] Check Failed
+2.6.3_var_tmp_nosuid      [ KO ] /var/tmp is not a partition
+2.6.3_var_tmp_nosuid      [ KO ] Check Failed
+2.6.4_var_tmp_noexec      [ KO ] /var/tmp is not a partition
+2.6.4_var_tmp_noexec      [ KO ] Check Failed
+2.7_var_log_partition     [ KO ] /var/log is not a partition
+2.7_var_log_partition     [ KO ] Check Failed
+2.8_var_log_audit_partiti [ KO ] /var/log/audit is not a partition
+2.8_var_log_audit_partiti [ KO ] Check Failed
+2.9_home_partition        [ KO ] /home is not a partition
+2.9_home_partition        [ KO ] Check Failed
+2.10_home_nodev           [ KO ] /home is not a partition
+2.10_home_nodev           [ KO ] Check Failed
+2.14_run_shm_nodev        [ KO ] /run/shm is not a partition
+2.14_run_shm_nodev        [ KO ] Check Failed
+2.15_run_shm_nosuid       [ KO ] /run/shm is not a partition
+2.15_run_shm_nosuid       [ KO ] Check Failed
+2.16_run_shm_noexec       [ KO ] /run/shm is not a partition
+2.16_run_shm_noexec       [ KO ] Check Failed
+2.17_sticky_bit_world_wri [ KO ] Some world writable directories are not on sticky bit mode!
+2.17_sticky_bit_world_wri [ KO ] /home/coder/project 
+2.17_sticky_bit_world_wri [ KO ] Some world writable directories are sticky bit mode, but not group owned is root!
+2.17_sticky_bit_world_wri [ KO ] /dev/mqueue 
+2.17_sticky_bit_world_wri [ KO ] Check Failed
+/home/coder/project/harbian-audit/lib/utils.sh: line 488: RESULT: unbound variable
+/home/coder/project/harbian-audit/lib/utils.sh: line 488: RESULT: unbound variable
+/home/coder/project/harbian-audit/lib/utils.sh: line 488: RESULT: unbound variable
+/home/coder/project/harbian-audit/lib/utils.sh: line 488: RESULT: unbound variable
+/home/coder/project/harbian-audit/lib/utils.sh: line 488: RESULT: unbound variable
+/home/coder/project/harbian-audit/lib/utils.sh: line 488: RESULT: unbound variable
+/home/coder/project/harbian-audit/lib/utils.sh: line 488: RESULT: unbound variable
+2.26_home_nosuid          [ KO ] /home is not a partition
+2.26_home_nosuid          [ KO ] Check Failed
+3.4_root_password         [ KO ] ^root:[*\!]: is present in /etc/shadow
+3.4_root_password         [ KO ] Check Failed
+4.1_restrict_core_dumps   [ KO ] ^\*[[:space:]]*hard[[:space:]]*core[[:space:]]*0$ not present in /etc/security/limits.conf
+4.1_restrict_core_dumps   [ KO ] fs.suid_dumpable was not set to 0
+4.1_restrict_core_dumps   [ KO ] Check Failed
+dmesg: read kernel buffer failed: Operation not permitted
+4.5_enable_apparmor       [ KO ] apparmor is absent!
+4.5_enable_apparmor       [ KO ] apparmor-profiles is absent!
+4.5_enable_apparmor       [ KO ] apparmor-utils is absent!
+4.5_enable_apparmor       [ KO ] Check Failed
+4.6_enable_selinux        [ KO ] selinux-basics is absent!
+4.6_enable_selinux        [ KO ] Check Failed
+4.7_enable_selinux_policy [ KO ] SELinux targeted policy is not enable.
+4.7_enable_selinux_policy [ KO ] Check Failed
+4.8_disable_usb_devices   [ KO ] install[[:blank:]].*usb_storage[[:blank:]].*/bin/true is not present in /etc/modprobe.d
+4.8_disable_usb_devices   [ KO ] Check Failed
+5.2_install_screen        [ KO ] screen is not installed!
+5.2_install_screen        [ KO ] Check Failed
+5.3_enable_openssh_server [ KO ] openssh-server is not installed!
+5.3_enable_openssh_server [ KO ] openssh-client is not installed!
+/home/coder/project/harbian-audit/lib/utils.sh: line 106: [: buster/sid: integer expression expected
+5.3_enable_openssh_server [ KO ] ssh.service is inactive
+5.3_enable_openssh_server [ KO ] Check Failed
+5.5_ensure_installed_sudo [ KO ] sudo Log file is not set in /etc/sudoers
+5.5_ensure_installed_sudo [ KO ] Check Failed
+6.5_ensure_time_sync_serv [ KO ] ntp chrony systemd-timesyncd is absent
+6.5_ensure_time_sync_serv [ KO ] Check Failed
+6.10_disable_http_server  [ KO ] nginx is installed!
+6.10_disable_http_server  [ KO ] Check Failed
+6.17_ensure_virul_scan_se [ KO ] clamav-daemon is not installed
+6.17_ensure_virul_scan_se [ KO ] Check Failed
+6.18_ensure_virusscan_pro [ KO ] Clamav config file /etc/clamav/clamd.conf not exist
+6.18_ensure_virusscan_pro [ KO ] Check Failed
+6.19_configure_ntp        [ KO ] ntp is not installed!
+6.19_configure_ntp        [ KO ] Check Failed
+6.20_configure_chrony     [ KO ] chrony is not installed!
+6.20_configure_chrony     [ KO ] Check Failed
+7.1.1_disable_ip_forwardi [ KO ] net.ipv4.ip_forward was not set to 0
+7.1.1_disable_ip_forwardi [ KO ] Check Failed
+7.1.2_disable_send_packet [ KO ] net.ipv4.conf.all.send_redirects was not set to 0
+7.1.2_disable_send_packet [ KO ] net.ipv4.conf.default.send_redirects was not set to 0
+7.1.2_disable_send_packet [ KO ] Check Failed
+7.2.2_disable_icmp_redire [ KO ] net.ipv4.conf.default.accept_redirects was not set to 0
+7.2.2_disable_icmp_redire [ KO ] Check Failed
+7.2.4_log_martian_packets [ KO ] net.ipv4.conf.all.log_martians was not set to 1
+7.2.4_log_martian_packets [ KO ] net.ipv4.conf.default.log_martians was not set to 1
+7.2.4_log_martian_packets [ KO ] Check Failed
+7.2.7_enable_source_route [ KO ] net.ipv4.conf.all.rp_filter was not set to 1
+7.2.7_enable_source_route [ KO ] net.ipv4.conf.default.rp_filter was not set to 1
+7.2.7_enable_source_route [ KO ] Check Failed
+7.3.1_disable_ipv6_router [ KO ] net.ipv6.conf.all.accept_ra was not set to 0
+7.3.1_disable_ipv6_router [ KO ] net.ipv6.conf.default.accept_ra was not set to 0
+7.3.1_disable_ipv6_router [ KO ] Check Failed
+7.3.2_disable_ipv6_redire [ KO ] net.ipv6.conf.all.accept_redirects was not set to 0
+7.3.2_disable_ipv6_redire [ KO ] net.ipv6.conf.default.accept_redirects was not set to 0
+7.3.2_disable_ipv6_redire [ KO ] Check Failed
+7.4.1_install_tcp_wrapper [ KO ] tcpd is not installed!
+7.4.1_install_tcp_wrapper [ KO ] Check Failed
+7.4.2_hosts_allow         [ KO ] /etc/hosts.allow does not exist
+7.4.2_hosts_allow         [ KO ] Check Failed
+7.4.3_hosts_allow_permiss [ KO ] /etc/hosts.allow permissions were not set to 644
+7.4.3_hosts_allow_permiss [ KO ] Check Failed
+7.4.4_hosts_deny          [ KO ] /etc/hosts.deny does not exist
+7.4.4_hosts_deny          [ KO ] Check Failed
+7.4.5_hosts_deny_permissi [ KO ] /etc/hosts.deny permissions were not set to 644
+7.4.5_hosts_deny_permissi [ KO ] Check Failed
+/home/coder/project/harbian-audit/bin/hardening/7.6_disable_wireless.sh: line 19: lspci: command not found
+7.7.1_enable_firewall     [ KO ] iptables is not installed!
+7.7.1_enable_firewall     [ KO ] Check Failed
+/home/coder/project/harbian-audit/bin/hardening/7.7.2_ensure_set_firewall_rules.sh: line 29: -S: command not found
+/home/coder/project/harbian-audit/bin/hardening/7.7.2_ensure_set_firewall_rules.sh: line 29: -S: command not found
+7.7.2_ensure_set_firewall [ KO ] Iptables/Ip6tables is not set rule!
+7.7.2_ensure_set_firewall [ KO ] Check Failed
+/home/coder/project/harbian-audit/bin/hardening/7.7.3_ensure_firewall_set_protect_dos_attacks.sh: line 34: -S: command not found
+7.7.3_ensure_firewall_set [ KO ] Iptables is not set rules of protect DOS attacks!
+7.7.3_ensure_firewall_set [ KO ] Check Failed
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.1_ensure_default_deny_firewall_policy.sh: line 25: -S: command not found
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.1_ensure_default_deny_firewall_policy.sh: line 25: -S: command not found
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.1_ensure_default_deny_firewall_policy.sh: line 25: -S: command not found
+7.7.4.1_ensure_default_de [ KO ] Iptables: Firewall policy is not default deny!
+7.7.4.1_ensure_default_de [ KO ] Check Failed
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.3_ensure_firewall_rules_exist_for_all_open_ports.sh: line 40: -S: command not found
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.3_ensure_firewall_rules_exist_for_all_open_ports.sh: line 40: -S: command not found
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.3_ensure_firewall_rules_exist_for_all_open_ports.sh: line 40: -S: command not found
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.3_ensure_firewall_rules_exist_for_all_open_ports.sh: line 40: -S: command not found
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.3_ensure_firewall_rules_exist_for_all_open_ports.sh: line 40: -S: command not found
+/home/coder/project/harbian-audit/bin/hardening/7.7.4.3_ensure_firewall_rules_exist_for_all_open_ports.sh: line 40: -S: command not found
+7.7.4.3_ensure_firewall_r [ KO ] Iptables is not set firewall rules exist for all open ports!
+7.7.4.3_ensure_firewall_r [ KO ] Check Failed
+/home/coder/project/harbian-audit/lib/utils.sh: line 1211: -S: command not found
+7.7.4.4_ensure_outbound_a [ KO ] Outbound and established connections are not configured!
+7.7.4.4_ensure_outbound_a [ KO ] Check Failed
+/home/coder/project/harbian-audit/lib/utils.sh: line 488: RESULT: unbound variable
+8.1.1.1_audit_log_storage [ KO ] /etc/audit/auditd.conf does not exist
+8.1.1.1_audit_log_storage [ KO ] Check Failed
+8.1.1.2_halt_when_audit_l [ KO ] /etc/audit/auditd.conf does not exist
+8.1.1.2_halt_when_audit_l [ KO ] Check Failed
+8.1.1.3_keep_all_audit_lo [ KO ] /etc/audit/auditd.conf does not exist
+8.1.1.3_keep_all_audit_lo [ KO ] Check Failed
+8.1.1.4_set_failure_mode  [ KO ] /etc/audit/rules.d/audit.rules does not exist
+8.1.1.4_set_failure_mode  [ KO ] Check Failed
+8.1.1.5_ensure_set_remote [ KO ] audispd-plugins is not installed.
+8.1.1.5_ensure_set_remote [ KO ] Check Failed
+8.1.1.6_ensure_set_encryp [ KO ] audispd-plugins is not installed.
+8.1.1.6_ensure_set_encryp [ KO ] Check Failed
+8.1.1.7_ensure_set_action [ KO ] audispd-plugins is not installed.
+8.1.1.7_ensure_set_action [ KO ] Check Failed
+8.1.1.8_ensure_set_action [ KO ] audispd-plugins is not installed.
+8.1.1.8_ensure_set_action [ KO ] Check Failed
+8.1.1.9_set_space_left_au [ KO ] /etc/audit/auditd.conf does not exist
+8.1.1.9_set_space_left_au [ KO ] Check Failed
+8.1.2_enable_auditd       [ KO ] auditd is not installed!
+8.1.2_enable_auditd       [ KO ] Check Failed
+/home/coder/project/harbian-audit/lib/utils.sh: line 83: [: buster/sid: integer expression expected
+8.1.3_audit_bootloader    [ KO ] There aren't audit=1 in /proc/cmdline
+8.1.3_audit_bootloader    [ KO ] Check Failed
+8.1.4_record_date_time_ed [ KO ] -a always,exit -F arch=b64 -S adjtimex -S settimeofday -k time-change is not in file /etc/audit/rules.d/audit.rules
+8.1.4_record_date_time_ed [ KO ] -a always,exit -F arch=b32 -S adjtimex -S settimeofday -S stime -k time-change is not in file /etc/audit/rules.d/audit.rules
+8.1.4_record_date_time_ed [ KO ] -a always,exit -F arch=b64 -S clock_settime -k time-change is not in file /etc/audit/rules.d/audit.rules
+8.1.4_record_date_time_ed [ KO ] -a always,exit -F arch=b32 -S clock_settime -k time-change is not in file /etc/audit/rules.d/audit.rules
+8.1.4_record_date_time_ed [ KO ] Check Failed
+8.1.5_record_user_group_e [ KO ] -w /etc/group -p wa -k identity is not in file /etc/audit/rules.d/audit.rules
+8.1.5_record_user_group_e [ KO ] -w /etc/passwd -p wa -k identity is not in file /etc/audit/rules.d/audit.rules
+8.1.5_record_user_group_e [ KO ] -w /etc/gshadow -p wa -k identity is not in file /etc/audit/rules.d/audit.rules
+8.1.5_record_user_group_e [ KO ] -w /etc/shadow -p wa -k identity is not in file /etc/audit/rules.d/audit.rules
+8.1.5_record_user_group_e [ KO ] -w /etc/security/opasswd -p wa -k identity is not in file /etc/audit/rules.d/audit.rules
+8.1.5_record_user_group_e [ KO ] Check Failed
+8.1.6_record_network_edit [ KO ] -a exit,always -F arch=b64 -S sethostname -S setdomainname -k system-locale is not in file /etc/audit/rules.d/audit.rules
+8.1.6_record_network_edit [ KO ] -a exit,always -F arch=b32 -S sethostname -S setdomainname -k system-locale is not in file /etc/audit/rules.d/audit.rules
+8.1.6_record_network_edit [ KO ] -w /etc/issue -p wa -k system-locale is not in file /etc/audit/rules.d/audit.rules
+8.1.6_record_network_edit [ KO ] -w /etc/issue.net -p wa -k system-locale is not in file /etc/audit/rules.d/audit.rules
+8.1.6_record_network_edit [ KO ] -w /etc/hosts -p wa -k system-locale is not in file /etc/audit/rules.d/audit.rules
+8.1.6_record_network_edit [ KO ] Check Failed
+8.1.7_record_mac_edit     [ KO ] SELinux and Apparmor not install!
+8.1.7_record_mac_edit     [ KO ] Check Failed
+8.1.8_record_login_logout [ KO ] -w /var/log/faillog -p wa -k logins is not in file /etc/audit/rules.d/audit.rules
+8.1.8_record_login_logout [ KO ] -w /var/log/lastlog -p wa -k logins is not in file /etc/audit/rules.d/audit.rules
+8.1.8_record_login_logout [ KO ] -w /var/log/tallylog -p wa -k logins is not in file /etc/audit/rules.d/audit.rules
+8.1.8_record_login_logout [ KO ] Check Failed
+8.1.9_record_session_init [ KO ] -w /var/run/utmp -p wa -k session is not in file /etc/audit/rules.d/audit.rules
+8.1.9_record_session_init [ KO ] -w /var/log/wtmp -p wa -k session is not in file /etc/audit/rules.d/audit.rules
+8.1.9_record_session_init [ KO ] -w /var/log/btmp -p wa -k session is not in file /etc/audit/rules.d/audit.rules
+8.1.9_record_session_init [ KO ] Check Failed
+8.1.10_record_dac_edit    [ KO ] -a always,exit -F arch=b64 -S chmod -S fchmod -S fchmodat -F auid>=1000 -F auid!=4294967295 -k perm_mod is not in file /etc/audit/rules.d/audit.rules
+8.1.10_record_dac_edit    [ KO ] -a always,exit -F arch=b32 -S chmod -S fchmod -S fchmodat -F auid>=1000 -F auid!=4294967295 -k perm_mod is not in file /etc/audit/rules.d/audit.rules
+8.1.10_record_dac_edit    [ KO ] -a always,exit -F arch=b64 -S chown -S fchown -S fchownat -S lchown -F auid>=1000 -F auid!=4294967295 -k perm_mod is not in file /etc/audit/rules.d/audit.rules
+8.1.10_record_dac_edit    [ KO ] -a always,exit -F arch=b32 -S chown -S fchown -S fchownat -S lchown -F auid>=1000 -F auid!=4294967295 -k perm_mod is not in file /etc/audit/rules.d/audit.rules
+8.1.10_record_dac_edit    [ KO ] -a always,exit -F arch=b64 -S setxattr -S lsetxattr -S fsetxattr -S removexattr -S lremovexattr -S fremovexattr -F auid>=1000 -F auid!=4294967295 -k perm_mod is not in file /etc/audit/rules.d/audit.rules
+8.1.10_record_dac_edit    [ KO ] -a always,exit -F arch=b32 -S setxattr -S lsetxattr -S fsetxattr -S removexattr -S lremovexattr -S fremovexattr -F auid>=1000 -F auid!=4294967295 -k perm_mod is not in file /etc/audit/rules.d/audit.rules
+8.1.10_record_dac_edit    [ KO ] Check Failed
+8.1.11_record_failed_acce [ KO ] -a always,exit -F arch=b64 -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EACCES -F auid>=1000 -F auid!=4294967295 -k access is not in file /etc/audit/rules.d/audit.rules
+8.1.11_record_failed_acce [ KO ] -a always,exit -F arch=b32 -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EACCES -F auid>=1000 -F auid!=4294967295 -k access is not in file /etc/audit/rules.d/audit.rules
+8.1.11_record_failed_acce [ KO ] -a always,exit -F arch=b64 -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EPERM -F auid>=1000 -F auid!=4294967295 -k access is not in file /etc/audit/rules.d/audit.rules
+8.1.11_record_failed_acce [ KO ] -a always,exit -F arch=b32 -S creat -S open -S openat -S truncate -S ftruncate -F exit=-EPERM -F auid>=1000 -F auid!=4294967295 -k access is not in file /etc/audit/rules.d/audit.rules
+8.1.11_record_failed_acce [ KO ] Check Failed
+8.1.12_record_syscall_exe [ KO ] -a always,exit -F arch=b64 -S execve -C uid!=euid -F key=execpriv is not in file /etc/audit/rules.d/audit.rules
+8.1.12_record_syscall_exe [ KO ] -a always,exit -F arch=b64 -S execve -C gid!=egid -F key=execpriv is not in file /etc/audit/rules.d/audit.rules
+8.1.12_record_syscall_exe [ KO ] Check Failed
+8.1.13_record_successful_ [ KO ] -a always,exit -F arch=b64 -S mount -F auid>=1000 -F auid!=4294967295 -k mounts is not in file /etc/audit/rules.d/audit.rules
+8.1.13_record_successful_ [ KO ] -a always,exit -F arch=b32 -S mount -F auid>=1000 -F auid!=4294967295 -k mounts is not in file /etc/audit/rules.d/audit.rules
+8.1.13_record_successful_ [ KO ] Check Failed
+8.1.14_record_file_deleti [ KO ] -a always,exit -F arch=b64 -S unlink -S unlinkat -S rename -S renameat -S rmdir -F auid>=1000 -F auid!=4294967295 -k delete is not in file /etc/audit/rules.d/audit.rules
+8.1.14_record_file_deleti [ KO ] -a always,exit -F arch=b32 -S unlink -S unlinkat -S rename -S renameat -S rmdir -F auid>=1000 -F auid!=4294967295 -k delete is not in file /etc/audit/rules.d/audit.rules
+8.1.14_record_file_deleti [ KO ] Check Failed
+8.1.15_record_sudoers_edi [ KO ] -w /etc/sudoers -p wa -k sudoers is not in file /etc/audit/rules.d/audit.rules
+8.1.15_record_sudoers_edi [ KO ] -w /etc/sudoers.d/ -p wa -k sudoers is not in file /etc/audit/rules.d/audit.rules
+8.1.15_record_sudoers_edi [ KO ] Check Failed
+8.1.17_record_kernel_modu [ KO ] -a always,exit -F arch=b32 -S init_module -S delete_module -S create_module -S finit_module -k modules is not in file /etc/audit/rules.d/audit.rules
+8.1.17_record_kernel_modu [ KO ] -a always,exit -F arch=b64 -S init_module -S delete_module -S create_module -S finit_module -k modules is not in file /etc/audit/rules.d/audit.rules
+8.1.17_record_kernel_modu [ KO ] Check Failed
+8.1.20_record_open_by_han [ KO ] -a always,exit -F arch=b64 -S open_by_handle_at -F exit=-EPERM -F auid>=1000 -F auid!=4294967295 -k access is not in file /etc/audit/rules.d/audit.rules
+8.1.20_record_open_by_han [ KO ] -a always,exit -F arch=b64 -S open_by_handle_at -F exit=-EACCES -F auid>=1000 -F auid!=4294967295 -k access is not in file /etc/audit/rules.d/audit.rules
+8.1.20_record_open_by_han [ KO ] Check Failed
+8.1.21_record_Events_that [ KO ] -a always,exit -F path=/usr/bin/passwd -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-passwd is not in file /etc/audit/rules.d/audit.rules
+8.1.21_record_Events_that [ KO ] -a always,exit -F path=/sbin/unix_chkpwd -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-passwd is not in file /etc/audit/rules.d/audit.rules
+8.1.21_record_Events_that [ KO ] -a always,exit -F path=/usr/bin/gpasswd -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-passwd is not in file /etc/audit/rules.d/audit.rules
+8.1.21_record_Events_that [ KO ] -a always,exit -F path=/usr/bin/chage -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-passwd is not in file /etc/audit/rules.d/audit.rules
+8.1.21_record_Events_that [ KO ] Check Failed
+8.1.22_record_Events_that [ KO ] -a always,exit -F path=/bin/su -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-priv_change is not in file /etc/audit/rules.d/audit.rules
+8.1.22_record_Events_that [ KO ] -a always,exit -F path=/usr/bin/sudo -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-priv_change is not in file /etc/audit/rules.d/audit.rules
+8.1.22_record_Events_that [ KO ] -a always,exit -F path=/usr/bin/newgrp -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-priv_change is not in file /etc/audit/rules.d/audit.rules
+8.1.22_record_Events_that [ KO ] -a always,exit -F path=/usr/bin/chsh -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-priv_change is not in file /etc/audit/rules.d/audit.rules
+8.1.22_record_Events_that [ KO ] -a always,exit -F path=/usr/bin/sudoedit -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-priv_change is not in file /etc/audit/rules.d/audit.rules
+8.1.22_record_Events_that [ KO ] -a always,exit -F path=/usr/bin/chfn -F perm=x -F auid>=500 -F auid!=4294967295 -k privileged-priv_change is not in file /etc/audit/rules.d/audit.rules
+8.1.22_record_Events_that [ KO ] Check Failed
+8.1.25_record_pam_timesta [ KO ] -a always,exit -F path=/usr/sbin/pam_timestamp_check -F perm=x -F auid>=1000 -F auid!=4294967295  -k privileged-pam is not in file /etc/audit/rules.d/audit.rules
+8.1.25_record_pam_timesta [ KO ] Check Failed
+8.1.27_record_Events_that [ KO ] -a always,exit -F path=/etc/fstab -F perm=wa -k config_file_change is not in file /etc/audit/rules.d/audit.rules
+8.1.27_record_Events_that [ KO ] -a always,exit -F path=/etc/login.defs -F perm=wa -k config_file_change is not in file /etc/audit/rules.d/audit.rules
+8.1.27_record_Events_that [ KO ] -a always,exit -F dir=/etc/pam.d/ -F perm=wa -k config_file_change is not in file /etc/audit/rules.d/audit.rules
+8.1.27_record_Events_that [ KO ] -a always,exit -F path=/etc/profile -F perm=wa -k config_file_change is not in file /etc/audit/rules.d/audit.rules
+8.1.27_record_Events_that [ KO ] -a always,exit -F dir=/etc/profile.d/ -F perm=wa -k config_file_change is not in file /etc/audit/rules.d/audit.rules
+8.1.27_record_Events_that [ KO ] -a always,exit -F dir=/etc/security/ -F perm=wa -k config_file_change is not in file /etc/audit/rules.d/audit.rules
+8.1.27_record_Events_that [ KO ] -a always,exit -F path=/etc/sysctl.conf -F perm=wa -k config_file_change is not in file /etc/audit/rules.d/audit.rules
+8.1.27_record_Events_that [ KO ] Check Failed
+8.1.29_record_usermod_cmd [ KO ] -a always,exit -F path=/usr/sbin/usermod -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-usermod is not in file /etc/audit/rules.d/audit.rules
+8.1.29_record_usermod_cmd [ KO ] Check Failed
+8.1.30_record_unix_update [ KO ] -a always,exit -F path=/sbin/unix_update -F perm=x -F auid>=1000 -F auid!=4294967295 -k privileged-unix-update is not in file /etc/audit/rules.d/audit.rules
+8.1.30_record_unix_update [ KO ] Check Failed
+8.1.31_record_file_transf [ KO ] /usr/bin/wget  is not in file /etc/audit/rules.d/audit.rules
+8.1.31_record_file_transf [ KO ] /usr/bin/curl  is not in file /etc/audit/rules.d/audit.rules
+8.1.31_record_file_transf [ KO ] Check Failed
+8.1.32_record_ufw_of_debi [ KO ] /etc/ufw/  is not in file /etc/audit/rules.d/audit.rules
+8.1.32_record_ufw_of_debi [ KO ] Check Failed
+8.1.34_record_privileged_ [ KO ] /sbin/pam_extrausers_chkpwd  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /sbin/unix_chkpwd  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/chfn  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/gpasswd  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/chage  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/passwd  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/wall  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/sudo  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/chsh  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/newgrp  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /usr/bin/expiry  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /bin/umount  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /bin/mount  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] /bin/su  is not in file /etc/audit/rules.d/audit.rules
+8.1.34_record_privileged_ [ KO ] Check Failed
+8.1.35_freeze_auditd_conf [ KO ] -e 2 is not in file /etc/audit/rules.d/audit.rules
+8.1.35_freeze_auditd_conf [ KO ] Check Failed
+8.2.1_install_rsyslog     [ KO ] rsyslog is not installed!
+8.2.1_install_rsyslog     [ KO ] Check Failed
+8.2.2_enable_rsyslog      [ KO ] rsyslog is disabled
+8.2.2_enable_rsyslog      [ KO ] Check Failed
+8.2.3_set_logfile_perm_cf [ KO ] /etc/rsyslog.conf is not exist! 
+8.2.3_set_logfile_perm_cf [ KO ] Check Failed
+8.2.4_rsyslog_remote_host [ KO ] ^*.*[^I][^I]*@ is not present in /etc/rsyslog.conf /etc/rsyslog.d/*.conf
+8.2.4_rsyslog_remote_host [ KO ] Check Failed
+8.3.1_install_syslog-ng   [ KO ] syslog-ng is not installed!
+8.3.1_install_syslog-ng   [ KO ] Check Failed
+8.3.2_enable_syslog-ng    [ KO ] syslog-ng is disabled
+8.3.2_enable_syslog-ng    [ KO ] Check Failed
+8.4.1_install_aide        [ KO ] aide aide-common is not installed!
+8.4.1_install_aide        [ KO ] Check Failed
+8.4.2_aide_cron           [ KO ] /etc/cron.daily/aide is not exist.
+8.4.2_aide_cron           [ KO ] Check Failed
+8.5_ensure_permissions_on [ KO ] Permissions of all log files are not correctly configured!
+8.5_ensure_permissions_on [ KO ] Check Failed
+8.6_verify_integrity_pack [ KO ] Verify integrity all packages is fail!
+8.6_verify_integrity_pack [ KO ] Check Failed
+8.7.1_journald_config_com [ KO ] /etc/systemd/journald.conf is not found!
+8.7.1_journald_config_com [ KO ] Check Failed
+8.7.2_journald_config_sto [ KO ] /etc/systemd/journald.conf is not found!
+8.7.2_journald_config_sto [ KO ] Check Failed
+9.1.1_enable_cron         [ KO ] cron is not installed!
+9.1.1_enable_cron         [ KO ] Check Failed
+stat: cannot stat '/etc/crontab': No such file or directory
+9.1.2_crontab_perm_owners [ KO ] /etc/crontab ownership was not set to root:root
+9.1.2_crontab_perm_owners [ KO ] /etc/crontab permissions were not set to 600
+9.1.2_crontab_perm_owners [ KO ] Check Failed
+stat: cannot stat '/etc/cron.hourly': No such file or directory
+9.1.3_cron_hourly_perm_ow [ KO ] /etc/cron.hourly ownership was not set to root:root
+9.1.3_cron_hourly_perm_ow [ KO ] /etc/cron.hourly permissions were not set to 700
+9.1.3_cron_hourly_perm_ow [ KO ] Check Failed
+9.1.4_cron_daily_perm_own [ KO ] /etc/cron.daily permissions were not set to 700
+9.1.4_cron_daily_perm_own [ KO ] Check Failed
+stat: cannot stat '/etc/cron.weekly': No such file or directory
+9.1.5_cron_weekly_perm_ow [ KO ] /etc/cron.weekly ownership was not set to root:root
+9.1.5_cron_weekly_perm_ow [ KO ] /etc/cron.weekly permissions were not set to 700
+9.1.5_cron_weekly_perm_ow [ KO ] Check Failed
+stat: cannot stat '/etc/cron.monthly': No such file or directory
+9.1.6_cron_monthly_perm_o [ KO ] /etc/cron.monthly ownership was not set to root:root
+9.1.6_cron_monthly_perm_o [ KO ] /etc/cron.monthly permissions were not set to 700
+9.1.6_cron_monthly_perm_o [ KO ] Check Failed
+stat: cannot stat '/etc/cron.d': No such file or directory
+9.1.7_cron_d_perm_ownersh [ KO ] /etc/cron.d ownership was not set to root:root
+9.1.7_cron_d_perm_ownersh [ KO ] /etc/cron.d permissions were not set to 700
+9.1.7_cron_d_perm_ownersh [ KO ] Check Failed
+9.1.8_cron_users          [ KO ] /etc/cron.allow is absent
+9.1.8_cron_users          [ KO ] /etc/at.allow is absent
+9.1.8_cron_users          [ KO ] Check Failed
+9.2.1_pam_retry_cracklib  [ KO ] libpam-cracklib is not installed!
+9.2.1_pam_retry_cracklib  [ KO ] Check Failed
+9.2.2_pam_minlen_cracklib [ KO ] Current OS is not support!
+9.2.2_pam_minlen_cracklib [ KO ] Check Failed
+9.2.3_pam_dcredit_crackli [ KO ] Current OS is not support!
+9.2.3_pam_dcredit_crackli [ KO ] Check Failed
+9.2.4_pam_ucredit_crackli [ KO ] Current OS is not support!
+9.2.4_pam_ucredit_crackli [ KO ] Check Failed
+9.2.5_pam_ocredit_crackli [ KO ] Current OS is not support!
+9.2.5_pam_ocredit_crackli [ KO ] Check Failed
+9.2.6_pam_lcredit_crackli [ KO ] Current OS is not support!
+9.2.6_pam_lcredit_crackli [ KO ] Check Failed
+9.2.7_pam_difok_cracklib  [ KO ] Current OS is not support!
+9.2.7_pam_difok_cracklib  [ KO ] Check Failed
+9.2.8_pam_minclass_crackl [ KO ] Current OS is not support!
+9.2.8_pam_minclass_crackl [ KO ] Check Failed
+9.2.9_pam_maxrepeat_crack [ KO ] Current OS is not support!
+9.2.9_pam_maxrepeat_crack [ KO ] Check Failed
+9.2.10_pam_maxclassrepeat [ KO ] Current OS is not support!
+9.2.10_pam_maxclassrepeat [ KO ] Check Failed
+9.2.11_pam_deny_times_tal [ KO ] ^auth[[:space:]]*required[[:space:]]*pam_faillock.so is not present in /etc/pam.d/common-auth
+9.2.11_pam_deny_times_tal [ KO ] Check Failed
+9.2.12_pam_lockout_failed [ KO ] ^auth[[:space:]]*required[[:space:]]*pam_faillock.so is not present in /etc/pam.d/common-auth
+9.2.12_pam_lockout_failed [ KO ] Check Failed
+9.2.13_pam_even_deny_root [ KO ] ^auth[[:space:]]*required[[:space:]]*pam_faillock.so is not present in /etc/pam.d/common-auth
+9.2.13_pam_even_deny_root [ KO ] Check Failed
+9.2.14_pam_dictcheck_pwqu [ KO ] Config file /etc/security/pwquality.conf is not exist!
+9.2.14_pam_dictcheck_pwqu [ KO ] Check Failed
+9.2.15_pam_printlastlog_t [ KO ] showfailed is not configured 4
+9.2.15_pam_printlastlog_t [ KO ] Check Failed
+9.2.16_pam_limit_password [ KO ] ^password.*pam_pwhistory.so is not present in /etc/pam.d/common-password
+9.2.16_pam_limit_password [ KO ] Check Failed
+9.2.17_pam_password_sha51 [ KO ] rounds set is not match legally, rounds is set 5000
+9.2.17_pam_password_sha51 [ KO ] Check Failed
+9.2.18_pam_auth_without_n [ KO ] nullok_secure is  configured
+9.2.18_pam_auth_without_n [ KO ] Check Failed
+9.3.1_sshd_protocol       [ KO ] openssh-server is not installed!
+9.3.1_sshd_protocol       [ KO ] Check Failed
+9.3.2_sshd_loglevel       [ KO ] openssh-server is not installed!
+9.3.2_sshd_loglevel       [ KO ] Check Failed
+stat: cannot stat '/etc/ssh/sshd_config': No such file or directory
+9.3.3_sshd_conf_perm_owne [ KO ] /etc/ssh/sshd_config ownership was not set to root:root
+9.3.3_sshd_conf_perm_owne [ KO ] /etc/ssh/sshd_config permissions were not set to 600
+9.3.3_sshd_conf_perm_owne [ KO ] Check Failed
+9.3.4_disable_x11_forward [ KO ] openssh-server is not installed!
+9.3.4_disable_x11_forward [ KO ] Check Failed
+9.3.5_sshd_maxauthtries   [ KO ] openssh-server is not installed!
+9.3.5_sshd_maxauthtries   [ KO ] Check Failed
+9.3.6_enable_sshd_ignorer [ KO ] openssh-server is not installed!
+9.3.6_enable_sshd_ignorer [ KO ] Check Failed
+9.3.7_disable_sshd_hostba [ KO ] openssh-server is not installed!
+9.3.7_disable_sshd_hostba [ KO ] Check Failed
+9.3.8_disable_root_login  [ KO ] openssh-server is not installed!
+9.3.8_disable_root_login  [ KO ] Check Failed
+9.3.9_disable_sshd_permit [ KO ] openssh-server is not installed!
+9.3.9_disable_sshd_permit [ KO ] Check Failed
+9.3.10_disable_sshd_seten [ KO ] openssh-server is not installed!
+9.3.10_disable_sshd_seten [ KO ] Check Failed
+9.3.11_sshd_ciphers       [ KO ] openssh-server is not installed!
+9.3.11_sshd_ciphers       [ KO ] Check Failed
+9.3.12_sshd_idle_timeout  [ KO ] openssh-server is not installed!
+9.3.12_sshd_idle_timeout  [ KO ] Check Failed
+9.3.13_sshd_limit_access  [ KO ] openssh-server is not installed!
+9.3.13_sshd_limit_access  [ KO ] Check Failed
+9.3.14_ssh_banner         [ KO ] openssh-server is not installed!
+9.3.14_ssh_banner         [ KO ] Check Failed
+9.3.15_sshd_printlastlog  [ KO ] openssh-server is not installed!
+9.3.15_sshd_printlastlog  [ KO ] Check Failed
+9.3.16_sshd_IgnoreUserKno [ KO ] openssh-server is not installed!
+9.3.16_sshd_IgnoreUserKno [ KO ] Check Failed
+9.3.17_sshd_GSSAPIAuthent [ KO ] openssh-server is not installed!
+9.3.17_sshd_GSSAPIAuthent [ KO ] Check Failed
+9.3.18_sshd_KerberosAuthe [ KO ] openssh-server is not installed!
+9.3.18_sshd_KerberosAuthe [ KO ] Check Failed
+9.3.19_sshd_StrictModes   [ KO ] openssh-server is not installed!
+9.3.19_sshd_StrictModes   [ KO ] Check Failed
+9.3.20_sshd_compression   [ KO ] openssh-server is not installed!
+9.3.20_sshd_compression   [ KO ] Check Failed
+9.3.21_sshd_MACs          [ KO ] openssh-server is not installed!
+9.3.21_sshd_MACs          [ KO ] Check Failed
+find: '/etc/ssh/': No such file or directory
+find: '/etc/ssh/': No such file or directory
+find: '/etc/ssh/': No such file or directory
+find: '/etc/ssh/': No such file or directory
+9.3.24_sshd_kexalgorithms [ KO ] openssh-server is not installed!
+9.3.24_sshd_kexalgorithms [ KO ] Check Failed
+9.3.25_sshd_logingracetim [ KO ] openssh-server is not installed!
+9.3.25_sshd_logingracetim [ KO ] Check Failed
+9.4_pam_restrict_su       [ KO ] ^auth[[:space:]]*required[[:space:]]*pam_wheel.so is not present in /etc/pam.d/su
+9.4_pam_restrict_su       [ KO ] Check Failed
+10.1.1_set_password_exp_d [ KO ] ^PASS_MAX_DAYS[[:space:]]*60 is not present in /etc/login.defs
+10.1.1_set_password_exp_d [ KO ] Check Failed
+10.1.2_set_password_min_d [ KO ] ^PASS_MIN_DAYS[[:space:]]*1 is not present in /etc/login.defs
+10.1.2_set_password_min_d [ KO ] Check Failed
+10.1.5_set_password_lock_ [ KO ] INACTIVE feature has disabled.
+10.1.5_set_password_lock_ [ KO ] Have least user's INACTIVE password lifttime is not set
+10.1.5_set_password_lock_ [ KO ] Check Failed
+10.1.6_remove_nopasswd_su [ KO ] NOPASSWD is set on /etc/sudoers.d/*, it's error conf
+10.1.6_remove_nopasswd_su [ KO ] Check Failed
+10.1.8_set_fail_delay_sec [ KO ] delay set condition is not equal or greater than 4000000
+10.1.8_set_fail_delay_sec [ KO ] Check Failed
+10.1.9_set_create_home_bo [ KO ] ^CREATE_HOME[[:space:]]*yes is not present in /etc/login.defs
+10.1.9_set_create_home_bo [ KO ] Check Failed
+10.1.10_set_maxlogins_for [ KO ] maxsyslogins is not set in /etc/security/limits.conf.
+10.1.10_set_maxlogins_for [ KO ] Check Failed
+10.2_disable_system_accou [ KO ] Some admin accounts don't have /bin/false as their login shell
+10.2_disable_system_accou [ KO ] coder:x:999:999::/home/coder:/bin/bash
+10.2_disable_system_accou [ KO ] Check Failed
+10.4_default_umask        [ KO ] umask 077 is not present in /etc/bash.bashrc /etc/profile.d /etc/profile
+10.4_default_umask        [ KO ] Check Failed
+10.5_set_timeout_tty      [ KO ] TMOUT= is not present in /etc/bash.bashrc /etc/profile.d /etc/profile
+10.5_set_timeout_tty      [ KO ] Check Failed
+12.7_find_world_writable_ [ KO ] Some world writable files are present
+12.7_find_world_writable_ [ KO ] /dev/full /dev/null /dev/random /dev/tty /dev/urandom /dev/zero 
+12.7_find_world_writable_ [ KO ] Check Failed
+12.8_find_unowned_files   [ KO ] Some unowned files are present
+12.8_find_unowned_files   [ KO ] /usr/local/bin/code-server 
+12.8_find_unowned_files   [ KO ] Check Failed
+12.9_find_ungrouped_files [ KO ] Some ungrouped files are present
+12.9_find_ungrouped_files [ KO ] /usr/local/bin/code-server 
+12.9_find_ungrouped_files [ KO ] Check Failed
+12.11_find_sgid_files     [ KO ] Some sgid files are present
+12.11_find_sgid_files     [ KO ] /sbin/pam_extrausers_chkpwd 
+12.11_find_sgid_files     [ KO ] Check Failed
+13.7_check_user_dir_perm  [ KO ] Other Read permission set on directory /home/coder
+13.7_check_user_dir_perm  [ KO ] Other Execute permission set on directory /home/coder
+13.7_check_user_dir_perm  [ KO ] Check Failed
+grep: /etc/modprobe.d/*: No such file or directory
+14.1_security_related_NAT [ KO ] nf_nat_sip is not set to blacklist
+grep: /etc/modprobe.d/*: No such file or directory
+14.1_security_related_NAT [ KO ] nf_conntrack_sip is not set to blacklist
+14.1_security_related_NAT [ KO ] /proc/sys/net/netfilter/nf_conntrack_helper is not exist, connection tracking may not be enabled, so please determine the risk yourself.
+14.1_security_related_NAT [ KO ] Check Failed
