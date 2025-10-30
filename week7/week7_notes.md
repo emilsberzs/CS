@@ -93,4 +93,50 @@
 - Government site went down because of unhandled errors 
 
 ## Secure file handling and configuration
--
+- Secure file handling means:
+    - Managing files in a way that avoids cyber threats during uploads, storage and access
+    - Validating file uploads and enforcing strict access, ensuring data remains accurate
+- Insecure file handling means organizations are vulnerable to data breaches or system compromise, and can lead to:
+    - Unauthorises access to system and files
+    - Data theft
+    - Malware uploads or remote code execution
+    - System being disabled
+- Good file handling is crucial for user trust, system stability and compliance with data protection laws
+
+### Validation
+- Basic validation includes:
+    - Allow only expected file types
+    - Check content matches file extension
+    - Use whitelist of acceptable files
+    - Set file size limits
+
+### Sanitisation
+- Remove risky characters from file names
+- Rename files to safe, system controlled names
+- Strip unsafe content and metadata
+
+### Access control
+- Apply least privilege
+- Use strict file and directory permissions
+- Separate storage areas for different roles or apps, to make lateral movement by attackers harder.
+
+### Secure storage formats
+- Ecrypt sensitive files at rest
+- Use secure containers or encrypted archives
+- Never store confidential data in plain text
+
+### File upload controls
+- Treat uploaded files as untrusted 
+- Store files in safe, non-public locations
+- Scan for viruses or malware
+- Rename files using safe names
+- Apply checks on both client-side and server-side
+
+### Monitoring and auditing
+- Log file actions:
+    - Upload
+    - Download
+    - Delete
+- Track user actions
+- Detect unusual file behavior
+- Use file integrity monitoring tools
