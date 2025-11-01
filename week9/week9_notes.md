@@ -148,3 +148,84 @@
 ### Strengths and weaknesses of hash functions
 - +Fast and simple
 - -Weak hashes are vulnerable to attacks
+
+## Digital signatures
+- DS is a mathematical method for verifying authenticity and integrity of message or document
+- Works like handwritten signature, but in digital format
+- Proves origin and prevents tampering
+
+### How DS works
+1. Sender applies cryptographic hash function to original message, producing fixed size digest
+2. This digest is encrypted using senders private key, creating a digital signature
+3. Recipient recieves both original message and the digital signature
+4. To verify the message ,recipient uses senders public key to decrypt the signature and obtain the original hash
+5. They hash the received message themselves, and compare it with the decrypted hash
+6. If they match, the signature is verified, and message is trusted
+- **Yes, it sort of swaps private/public encryption/decryption, i looked it up, but that's how it works**
+    - ![alt text](image-3.png)
+ 
+### DS Key concepts
+- Private key:
+    - Used by sender to create a signature
+- Public key:
+    - Used by recipient to verify signatures
+- Hash function:
+    - Used to summarize the content into fixed size digest
+- Digital certificate:
+    - Links public key to an identity (usually issued by certificate authority)
+
+### Use cases
+- Email signing:
+    - Confirms the sender and also message integrity
+    - Protects against spoofing and fraud
+    - Used in secure and enterprise email systems
+- Software signing:
+    - Validates software source and integrity
+    - Prevents tampered updates and malware
+    - Trusted in OS and app distributions
+- Legal documents:
+    - Proves document authorship and time
+    - Recognized under digital signature laws
+    - Used in e-signatures and banking and digital contracts in procurement systems
+
+### Main Algorithms for DS
+- Rivest-Shamir-Aldeman(RSA):
+    - Based on factorisation of large numbers
+    - Supports signing and encryption
+- Digital Signature Algorithm(DSA):
+    - US government created and backed algorithm
+    - Used in secure applications
+- Elliptic Curve Digital Signature Algorithm(ECDSA):
+    - More efficient and secure with shorter keys
+
+### Example in python at ds.py in same folder
+
+### Strengths and limitations
+- +Strong against forgery and tampering
+- -Depends on private key security and trust in certificate authorities
+
+## Common Cryptography applications
+### Secure websites(HTTPS)
+- Built on Transport Layer Security(TLS)
+- When visiting secure website:
+    1. Website sends Digital Certificate to browser to ptove its identity
+    2. Session key is negotiated
+    3. All comunications is encrypted
+- Relies on:
+    - RSA or ECDSA for key exchange
+    - Symmetric algorithm like used AES for content encryption
+    - Hashing function like SHA256 for message integrity
+
+### Encrypted messaging (Signal, WhatsApp)
+- End-to-End encryption protects message content
+- Not even the app provider can access the data (Really tho?)
+- For example, Signal relies on:
+    - X3DH for key agreement
+    - Double Ratchet for session updates
+    - AES and HMAC for secure verified messaging
+
+### Digital signature on documents
+- ![alt text](image-4.png)
+
+### Code signing
+- ![alt text](image-5.png)
